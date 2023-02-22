@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: rgb(5, 5, 5);
+  color: antiquewhite;
+  
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.elements {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(13, 127, 188);
+
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+  margin-right: 20px;
+
+  border-style: solid;
+  border-color: rgb(22, 23, 23);
+  border-width: 1px;
+  border-radius: 8px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 15px;
+  margin-top: 10px;
+
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1px;
+  border-radius: 8px;
+
+  width: 200px;
+  transition: all .75s ease-in ;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.element:hover {
+  background-color: rgb(10, 92, 136);
+  cursor: pointer;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  max-width: 900px;
+
+  background-color: rgb(13, 127, 188);
+  
+  border-style: solid;
+  border-color: aliceblue;
+  border-width: 1px;
+  border-radius: 8px;
+
+  width: auto;
+  height: auto;
+  min-height: 500px ;
+  min-width: 500px;
+  overflow-y: auto;
+
+  padding: 20px;
+}
+
+
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+input {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-color: aliceblue;
+  border: none;
+
+  background-color: aliceblue;
+  color: black;
+  margin: 10px;
+  padding: 5px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+::-webkit-file-upload-button {
+  background-color: rgb(13, 127, 188);
+  color: aliceblue;
+  font-size: 12px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+}
+
+button {
+  background-color: aliceblue;
+ 
+  text-decoration: none;
+  padding: 5px;
+  margin: 5px;
+  display: inline inline-block;
+  font-size: 9px;
+
+  border-radius: 5px;
+  border: none;
 }
